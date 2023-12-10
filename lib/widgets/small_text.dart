@@ -16,3 +16,24 @@ class SmallText extends StatelessWidget {
     required this.text,
   });
 }
+class LargeText extends StatelessWidget {
+  String text;
+  Color? textColor;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: TextStyle(
+          fontWeight: FontWeight.w900,
+          fontSize: 26,
+          color:textColor ?? Colors.black,
+          fontFamily: "Kailasa"),
+    );
+  }
+
+  LargeText({
+    required this.text,
+     this.textColor,
+  });
+}
