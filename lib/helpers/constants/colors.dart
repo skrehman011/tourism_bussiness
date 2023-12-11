@@ -72,3 +72,4 @@ Decoration roundedDec = BoxDecoration(
 );
 
 BoxShadow myShadow = BoxShadow(color: Colors.red);
+List<BoxShadow> appBoxShadow = [BoxShadow(blurRadius: 6, color: Color(0x414D5678))];
