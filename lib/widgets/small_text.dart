@@ -32,8 +32,8 @@ class LargeText extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-          fontWeight: FontWeight.w900,
-          fontSize: 26,
+          fontWeight: FontWeight.w700,
+          fontSize: 20,
           color:textColor ?? Colors.black,
           fontFamily: "Kailasa"),
     );

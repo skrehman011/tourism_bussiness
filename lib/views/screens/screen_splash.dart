@@ -37,11 +37,12 @@ class ScreenSplash extends StatelessWidget {
 
                 text: TextSpan(
               text: "Already have an account ",
-             recognizer: TapGestureRecognizer()..onTap=()=>Get.to(ScreenLogin()),
 
              children: [
                TextSpan(text: "|"),
-               TextSpan(text: " Login"),
+               TextSpan(text: " Login",
+                 recognizer: TapGestureRecognizer()..onTap=()=>Get.to(ScreenLogin()),
+               ),
 
              ]
             )

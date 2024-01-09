@@ -5,6 +5,25 @@ class ScreenAddNewPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Add New Place', style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+          color: Colors.black
+        ),
+        ),
+          centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Container(
+            child: Column(
+              custom
+            ),
+          )
+        ],
+      ),
+    );
   }
 }

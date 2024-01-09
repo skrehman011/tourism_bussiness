@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class CustomImage extends StatelessWidget {
   String? name;
   double? height, width;
+  BoxFit? fit;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,8 @@ class CustomImage extends StatelessWidget {
 
   CustomImage({
     this.name,
-    this.width,
     this.height,
+    this.width,
+    this.fit,
   });
 }

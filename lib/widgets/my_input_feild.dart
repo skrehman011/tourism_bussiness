@@ -121,7 +121,7 @@ class _MyInputFieldState extends State<MyInputField> {
         border: Border.all(
           color: Color(0xffdedede),
         ),
-        borderRadius: BorderRadius.circular(7),
+        borderRadius: BorderRadius.circular(25),
       ),
       child: TextFormField(
         maxLength: widget.limit,

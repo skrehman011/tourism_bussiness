@@ -25,7 +25,7 @@ TextStyle heading3 = TextStyle(
 
 
 TextStyle title1 = TextStyle(
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w700,
     fontSize: 20,
     color: Colors.black,
     fontFamily: "Kailasa");
@@ -46,14 +46,14 @@ TextStyle title3 = TextStyle(
 
 
 TextStyle subtile1 = TextStyle(
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w500,
     fontSize: 14,
     color: Colors.black,
     fontFamily: "Kailasa");
 
 
 TextStyle subtile2 = TextStyle(
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w400,
     fontSize: 12,
     color: Colors.black,
     fontFamily: "Kailasa");
@@ -73,3 +73,4 @@ Decoration roundedDec = BoxDecoration(
 
 BoxShadow myShadow = BoxShadow(color: Colors.red);
 List<BoxShadow> appBoxShadow = [BoxShadow(blurRadius: 6, color: Color(0x414D5678))];
+

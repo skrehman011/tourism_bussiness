@@ -4,6 +4,7 @@ import 'package:tourism_bussiness/views/layouts/layout_active_booking.dart';
 import 'package:tourism_bussiness/views/layouts/layout_finished_booking.dart';
 import 'package:tourism_bussiness/views/layouts/layout_pending_booking.dart';
 
+
 class LayoutBooking extends StatelessWidget {
   List<Widget> bookingLayouts = [
     LayoutActiveBooking(),
@@ -26,7 +27,7 @@ class LayoutBooking extends StatelessWidget {
                 padding: EdgeInsets.all(5),
                 margin: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                  color: Colors.grey,
+                  color: Colors.grey.shade600,
                   borderRadius: BorderRadius.circular(25)
                 ),
                 // color: Colors.red,
@@ -38,14 +39,14 @@ class LayoutBooking extends StatelessWidget {
                     color: appColor,
                     borderRadius: BorderRadius.circular(25)
                   ),
-                  unselectedLabelStyle: TextStyle(color: Colors.grey),
+                  unselectedLabelStyle: TextStyle(color: Color(0xFFC4C4C4)),
 
                   // indicatorPadding: EdgeInsets.symmetric(vertical:-7,horizontal: 4),
                   indicatorSize: TabBarIndicatorSize.tab,
                   tabs: [
-                    Text("Active"),
+                    Text("Active",),
                     Text("Pending"),
-                    Text("Finished")
+                    Text("Finished"),
                   ],
                 ),
               ),

@@ -87,9 +87,9 @@ class Booking{
 //</editor-fold>
 }
 List<Booking> bookingList=[
-  Booking(id: "1", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Ali", bookingFrom: "10 aug,2023", bookingTo: "10 aug,2024", bookingDate: "9 aug,2025"),
-  Booking(id: "2", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Maaz", bookingFrom: "12 aug,2023", bookingTo: "23 aug,2024", bookingDate: "4 aug,2025"),
-  Booking(id: "3", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Umar", bookingFrom: "14 aug,2023", bookingTo: "24 aug,2024", bookingDate: "6 aug,2025"),
-  Booking(id: "4", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Ramzan", bookingFrom: "16 aug,2023", bookingTo: "26 aug,2024", bookingDate: "8 aug,2025"),
-  Booking(id: "5", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Hasan", bookingFrom: "18 aug,2023", bookingTo: "27 aug,2024", bookingDate: "1 aug,2025"),
+  Booking(id: "1", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Ali", bookingFrom: "10 Aug,2023", bookingTo: "10 Aug,2024", bookingDate: "9 Aug,2025"),
+  Booking(id: "2", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Maaz", bookingFrom: "12 Aug,2023", bookingTo: "23 Aug,2024", bookingDate: "4 Aug,2025"),
+  Booking(id: "3", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Umar", bookingFrom: "14 Aug,2023", bookingTo: "24 Aug,2024", bookingDate: "6 aug,2025"),
+  Booking(id: "4", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Ramzan", bookingFrom: "16 Aug,2023", bookingTo: "26 Aug,2024", bookingDate: "8 Aug,2025"),
+  Booking(id: "5", imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", customerName: "Hasan", bookingFrom: "18 Aug,2023", bookingTo: "27 Aug,2024", bookingDate: "1 Aug,2025"),
 ];

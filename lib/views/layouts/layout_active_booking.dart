@@ -3,7 +3,8 @@ import 'package:tourism_bussiness/models/booking.dart';
 import 'package:tourism_bussiness/views/layouts/item_booking.dart';
 
 class LayoutActiveBooking extends StatelessWidget {
-  const LayoutActiveBooking({Key? key}) : super(key: key);
+
+
 
   @override
   Widget build(BuildContext context) {

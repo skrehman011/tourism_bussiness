@@ -6,6 +6,7 @@ import 'package:tourism_bussiness/widgets/small_text.dart';
 
 class ItemBooking extends StatelessWidget {
  Booking booking;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,8 +20,8 @@ class ItemBooking extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children:[
         Container(
-          height:120,
-          width:120,
+          height:100,
+          width:100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.horizontal(left: Radius.circular(10)),
             image: DecorationImage(
@@ -44,7 +45,7 @@ class ItemBooking extends StatelessWidget {
             RichText(
 
                 text: TextSpan(
-              text: "Booking to       : ",
+              text: "Booking to : ",
               style: subtile1,
               children: [
                 TextSpan(text: booking.bookingTo,style: subtile2)
@@ -52,13 +53,14 @@ class ItemBooking extends StatelessWidget {
             ))
           ]      ).marginOnly(left: 5,top: 5),
         ),
-        Text(booking.bookingDate).marginOnly(left: 5,top: 10),
+        Text(booking.bookingDate).marginOnly(left: 5,top: 10, right: 5),
     ])
-        
+
     );
   }
 
  ItemBooking({
     required this.booking,
+
   });
 }
