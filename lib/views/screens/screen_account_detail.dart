@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:tourism_bussiness/helpers/constants/colors.dart';
 
 import '../../widgets/custom_image.dart';
 
@@ -11,10 +13,12 @@ class ScreenAccountDetail extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){},
+          onPressed: (){
+            Get.back();
+          },
           icon: Icon(Icons.arrow_back_ios),
         ),
-        title: Text('Booking Details', style: TextStyle(
+        title: Text('My Account', style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w700
         ),),
@@ -26,143 +30,74 @@ class ScreenAccountDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              height: 200,
-              width: Get.width,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                image: DecorationImage(
-                  image: AssetImage('assets/images/hotel.png'), // Replace with your image path
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: Align(
-                alignment: Alignment.bottomLeft,
-                child: Text('Grand Royal Hotel', style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    fontSize: 18,
-                    color: Colors.white
-                ),).marginOnly(left: 10, bottom: 10),
-              ),
-            ).marginSymmetric(horizontal: 15, vertical: 10),
-            // Adjust the spacing between image and text// Text below the image
+           Stack(
+             children: [
+               Center(
+                 child: CircleAvatar(
+                   radius: 60,
+                   backgroundColor: Colors.white ,
+                   child: CustomImage(name: 'Ellipse',),
+
+                 ),
+               ),
+               Positioned(
+                   top: 30,
+                   bottom: 0,
+                   left: 120.sp,
+                   right: 0,
+                   child: Icon(Icons.camera_alt))
+             ],
+           ).marginSymmetric(vertical: 10),
             ListTile(
-              title: Text(
-                'Person Name',
+              title: Text('Name',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 12,
+                color: Colors.grey
+              ),
+              ),
+              subtitle: Text('Khalil Ur Rehman',
                 style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15,
+                    color: Colors.black
                 ),
               ),
-              subtitle: Text(
-                '123@gamil.com',
+              trailing: Text('Edit', style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+                color: appColor
+              ),),
+            ).marginSymmetric(horizontal: 10),
+            Divider(thickness: 0.5,
+            height: 0.5,
+              color: Colors.grey,
+            ),
+            ListTile(
+              title: Text('Email',
                 style: TextStyle(
+                    fontWeight: FontWeight.w400,
                     fontSize: 12,
-                    fontWeight: FontWeight.w500,
                     color: Colors.grey
                 ),
               ),
-              trailing: CircleAvatar(
-                radius: 35,
-                child: CustomImage(name: 'profile',),
-              ),
-            ),
-            ListTile(
-
-              title: Text(
-                'Booking From',
+              subtitle: Text('Khalil@gmail.com',
                 style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 15,
+                    color: Colors.black
                 ),
               ),
-              trailing: Text(
-                '26 Aug, 2024',
-                style: TextStyle(
+              trailing: Text('Edit', style: TextStyle(
                   fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ).marginOnly(top: 10),
-            Divider(height: .5,
-              thickness: 1,
-            ),
-            ListTile(
-              title: Text(
-                'Booking To',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              trailing: Text(
-                '02 Sep, 2024',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            Divider(height: .5,
-              thickness: 1,
-            ),
-            ListTile(
-              title: Text(
-                'Number of rooms',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              trailing: Text(
-                '1',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            Divider(height: .5,
-              thickness: 1,
-            ),
-            ListTile(
-              title: Text(
-                'Adults (age 15+)',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              trailing: Text(
-                '2',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            Divider(height: .5,
-              thickness: 1,
-            ),
-            ListTile(
-              title: Text(
-                'Children (age 0 to 15)',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              trailing: Text(
-                '0',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            Divider(height: .5,
-              thickness: 1,
-            ),
+                  fontWeight: FontWeight.w400,
+                  color: appColor
+              ),),
+            ).marginSymmetric(horizontal: 10),
+            Divider(thickness: 0.5,
+              height: 0.5,
+              color: Colors.grey,
+            )
           ],
         ),
       ).marginOnly(top: 10, bottom: 20),

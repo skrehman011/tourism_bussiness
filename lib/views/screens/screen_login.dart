@@ -48,6 +48,7 @@ class ScreenLogin extends StatelessWidget {
             hint: 'Email',
           ).marginSymmetric(vertical: 20),
           MyInputField(
+            padding: EdgeInsets.only(top: 15, left: 10),
             height: 50,
             isPasswordField: true,
             hint: 'password',
